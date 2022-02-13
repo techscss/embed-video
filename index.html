@@ -4,29 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enbed Video Player</title>
-    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <title>Embed Video Player</title>
 </head>
 <body>
-  <video id="video" class="video-js vjs-theme-city vjs-16-9 vjs-big-play-centered" autoplay controls></video>
-  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-quality-levels/2.1.0/videojs-contrib-quality-levels.min.js" integrity="sha512-IcVOuK95FI0jeody1nzu8wg/n+PtQtxy93L8irm+TwKfORimcB2g4GSHdc0CvsK8gt1yJSbO6fCtZggBvLDDAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./s3/videojs-hls-quality-selector.js"></script>
-  <script src="./s3/videojs-airplay.js"></script>
-  <script>
-    var player = videojs('video', {
-      autoplay: true,
-			muted: false,
-			controls: true,
-			responsive: true,
-      plugins: { airplayButton: {} }
-    });
-
-    player.src({
-        src: '//cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8',
-    });
-    player.hlsQualitySelector();
-    player.play();
-  </script>
+  <iframe width="804" height="452" src="https://s3.ap-southeast-2.amazonaws.com/nabedu.tv/22-029+-+NAB+Capital+Markets/NAB_Captial+Markets+Session+1_v1_3mb_1080.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
